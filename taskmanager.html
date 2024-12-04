@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="./taskmanager.css">
+  </head>
+  <body>
+    <div class="container">
+        <div class="stats">
+            <div class="info">
+                <h1>Task Manager</h1>
+                <p>Track your progress here!</p>
+                <div id="track-bar">
+                    <div id="tracker"></div>
+                </div>
+            </div>
+            <div class="task-counter">
+                <p id="numbers">0 / 0</p>
+            </div>
+        </div>
+        <div class="input-box">
+            <form>
+              <input id="taskInput" type="text" placeholder="Enter the task"/>
+              <button id="newTask" type="submit">Add</button>
+            </form>
+        </div>
+        
+            <ul id="task-list"></ul>
+        
+        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="./taskmanager.js"></script>
+  </body>
+</html>
+     

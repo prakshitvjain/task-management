@@ -1,0 +1,151 @@
+body {
+    background-color: #140033;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.container {
+    margin: auto;
+    width: 600px;
+    margin-top: 100px;
+    border-radius: 25px;
+    min-height: 250px;
+    height:auto;
+    max-width: 100%;
+}
+
+.stats {
+    border: 0.6mm solid rgb(212, 92, 212);
+    border-radius: 20px;
+    margin: 12px;
+    padding:22px;
+    display: flex;
+    gap : 25px;
+    justify-content: space-between;
+}
+#numbers {
+    background-color: rgb(15, 224, 224);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 22px;
+    margin: auto;
+    font-weight: bolder;
+    color: #380b68;
+    box-shadow:0px 0px 15px rgb(199, 78, 255);
+    
+}
+
+.info p {
+
+    font-size: small;
+}
+.info {
+    width: 100%;
+}
+#track-bar {
+    width: 100%;
+    height:15px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 7px;
+    margin: 17px 0px 0px 0px;
+}
+#tracker {
+    background-color: aqua;
+    height: inherit;
+    width: 0%;
+    border-radius: inherit;
+    transition: all 0.3s ease;
+}
+form {
+    margin: 50px 7px 30px 16px;
+    display: flex;
+}
+input {
+    flex:1;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #361d50;
+    border:2px solid #c298ec;
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    color: white;
+}
+button {
+    padding: 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    outline: none;
+    font-weight: bold;
+    background-color: rgb(79, 236, 236);
+    border: none;
+    box-shadow: 0 0 4px rgb(0, 0, 0);
+}
+button:hover{
+    background-color: rgba(79, 236, 236, 0.74);
+}
+
+.edit {
+    width:25px;
+    height: 25px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.delete {
+    width:26px;
+    height:26px;
+    margin: 0px 7px;
+    cursor: pointer;
+
+}
+.pText {
+    padding: 1px;
+    font-size: small;
+}
+.checkbox {
+    width: 24px;
+    height: 24px;
+}
+#task-list{
+    display: flex;
+    width:100%;
+    flex-direction: column;
+    margin-top: 30px;
+    list-style-type: none;
+    padding-right: 28px;
+
+}
+.taskItem {
+    width:100%;
+    display:flex;
+    padding:10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 14px;
+    border:1px solid #9e62db;
+    border-radius: 12px;
+    background-color: #371a57;
+    font-weight: bold;
+    overflow: scroll;
+}
+.task {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.completed .pText {
+    text-decoration: line-through;
+    color: cyan;
+}
